@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "vscjava.vscode-java-pack",
+        "oracle.oracle-java",
+        "vscjava.vscode-spring-initializr",
+        "vmware.vscode-spring-boot",
+        "redhat.vscode-xml"
+    ]
+}
