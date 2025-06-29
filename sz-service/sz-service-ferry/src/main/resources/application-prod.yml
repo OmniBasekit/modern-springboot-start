@@ -1,7 +1,7 @@
 server:
   servlet:
-    context-path: /api/admin
-  port: 8531
+    context-path: /api/ferry
+  port: 8939
 sz:
   cors:
     # 为了提高安全性，生产环境不建议使用*，需修改成指定的域名

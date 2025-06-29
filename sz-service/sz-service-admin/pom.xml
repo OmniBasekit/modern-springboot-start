@@ -42,7 +42,7 @@
         </dependency>
         <!--微信模块-->
         <dependency>
-            <groupId>com.sz.wechat</groupId>
+            <groupId>com.sz</groupId>
             <artifactId>sz-common-wechat</artifactId>
             <version>${revision}</version>
         </dependency>

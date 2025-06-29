@@ -1,0 +1,11 @@
+POST http://localhost:9991/api/ferry/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "username":"Hendry",
+    "password":"61888",
+    "clientId":"26",
+    "code":"xxx",
+    "grantType":"wechat"
+}
+

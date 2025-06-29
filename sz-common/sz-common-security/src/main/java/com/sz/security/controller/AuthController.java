@@ -37,6 +37,14 @@ public class AuthController {
         return ApiResult.success(authService.loginClient(loginInfo));
     }
 
+    @SaIgnore
+    @DebounceIgnore
+    @Operation(summary = "登录")
+    @PostMapping("test")
+    public ApiResult<String> login() {
+        return ApiResult.success("Test");
+    }
+
     @Operation(summary = "登出")
     @PostMapping("logout")
     public ApiResult<Void> logout() {

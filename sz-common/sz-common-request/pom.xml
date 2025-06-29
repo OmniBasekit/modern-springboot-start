@@ -8,8 +8,8 @@
         <artifactId>sz-common</artifactId>
         <version>${revision}</version>
     </parent>
-
-    <artifactId>sz-common-wechat</artifactId>
+    <groupId>com.sz.request</groupId>
+    <artifactId>sz-common-request</artifactId>
 
     <dependencies>
         <dependency>
@@ -26,27 +26,10 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>com.sz</groupId>
-            <artifactId>sz-common-db-redis</artifactId>
-            <version>${revision}</version>
-            <scope>provided</scope>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>com.github.binarywang</groupId>
-            <artifactId>wx-java-miniapp-spring-boot-starter</artifactId>
-            <version>4.7.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.binarywang</groupId>
-            <artifactId>wx-java-pay-spring-boot-starter</artifactId>
-            <version>4.7.0</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-core</artifactId>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.12.0</version>
         </dependency>
     </dependencies>
-
 
 </project>

@@ -35,6 +35,7 @@ public enum CommonResponseEnum implements ResponseEnumTemplate<CommonResponseEnu
     BACKGROUND_NOT_EXISTS(1014, "背景图片不存在"),
 
     UNKNOWN(9999, "未知异常"),
+    WECHAT_LOGIN_FAIL(1015, "微信小程序登录失败"),
     ;
     // @formatter:on
 

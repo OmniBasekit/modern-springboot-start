@@ -1,7 +1,7 @@
 server:
   servlet:
-    context-path: /api/admin
-  port: 8531
+    context-path: /api/ferry
+  port: 8939
 sz:
   cors:
     allowed-origins:

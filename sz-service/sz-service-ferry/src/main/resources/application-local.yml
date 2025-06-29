@@ -1,0 +1,14 @@
+server:
+  servlet:
+    context-path: /api/ferry
+  port: 8939
+ferry:
+  upstream:
+    gzkl:
+      apiServerUrl: https://yjzsuat.prol.com.cn:8443/gzkl_shipdistribute
+      accessId: H-07f8661900x0001-3bbf081eacb400x0001
+      accessKey: nR0Z1vW8tQnI9KxL6Yxip2sLjjLe99TeS6VXuffLlzU=
+      key: b3a2795c124e34cc6510f35672c9152f
+      company: 0181f6bc8c0e00-6303b0
+      supplier: 0181f6bc8c0e00-6303b0
+      code: api001-1

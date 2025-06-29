@@ -48,10 +48,10 @@ sz:
       api: E://code//Gitlab//sz-framework//sz-admin
     # 模块名，指定代码生成的模块
     module-name: sz-service
-    service-name: sz-service-admin
+    service-name: sz-service-ferry
     global:
-      author: sz-admin
-      packages: com.sz.admin
+      author: Rain
+      packages: com.sz.ferry
       ignore-table-prefix:
         enabled: true
         prefixes:
@@ -66,3 +66,13 @@ sz:
     # 定义允许跨域请求的源（Origin）。可以设置为特定的域名、IP 地址或通配符。
     allowed-origins:
       - "*"
+wx:
+  miniapp:
+    appid: wxbcf1d8437df85a67
+    secret: 6c06cd74bb7083ec594e3747998a1133
+    msgDataFormat: JSON
+  pay:
+    appId: wxbcf1d8437df85a67
+    mchId: 1653852821
+    mchKey: zJMcvV8bqbUWEL8Mfia1C6xsKrPtY6AW
+    keyPath: classpath:apiclient_cert.p12

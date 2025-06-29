@@ -1,0 +1,43 @@
+spring:
+  threads:
+    virtual:
+      # 启用虚拟线程
+      enabled: true
+  profiles:
+    active: local
+  config:
+    import:
+      - file:config/${spring.profiles.active}/oss.yml
+      - file:config/${spring.profiles.active}/mybatis-flex.yml
+      - file:config/${spring.profiles.active}/mysql.yml
+      - file:config/${spring.profiles.active}/page-helper.yml
+      - file:config/${spring.profiles.active}/redis.yml
+      - file:config/${spring.profiles.active}/sa-token.yml
+  mvc:
+    path-match:
+      matching-strategy: ant_path_matcher
+  application:
+    name: ferry-service
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 15MB
+app:
+  version: @project.version@
+sz:
+
+  cors:
+    # 定义允许跨域请求的源（Origin）。可以设置为特定的域名、IP 地址或通配符。
+    allowed-origins:
+      - "*"
+wx:
+  miniapp:
+    appid: wxbcf1d8437df85a67
+    secret: 6c06cd74bb7083ec594e3747998a1133
+    msgDataFormat: JSON
+  pay:
+    appId: wxbcf1d8437df85a67
+    mchId: 1653852821
+    mchKey: zJMcvV8bqbUWEL8Mfia1C6xsKrPtY6AW
+    keyPath: classpath:apiclient_cert.p12
+
