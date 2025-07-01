@@ -1,7 +1,7 @@
 package com.sz;
 
 import com.sz.ferry.config.GZKLApiSecretKeyConfig;
-import com.sz.ferry.upstream.service.UpstreamService;
+import com.sz.ferry.upstream.service.IUpstreamService;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -16,12 +16,12 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @RequiredArgsConstructor
 public class FerryApplication {
 
-    private final UpstreamService upstreamService;
+    private final IUpstreamService IUpstreamService;
     private final GZKLApiSecretKeyConfig gzklApiSecretKeyConfig;
 
     @PostConstruct
     public void init() {
-        upstreamService.testConnection();
+//        upstreamService.testConnection();
     }
     public static void main(String[] args) {
 

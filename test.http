@@ -1,11 +1,17 @@
-POST http://localhost:9991/api/ferry/auth/login HTTP/1.1
+# GET http://localhost:8939/api/ferry/wx/userInfo HTTP/1.1
+# content-type: application/json
+# Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOjI5NzA2MjY3OTA2MTkwNTQwOCwicm5TdHIiOiJaOXU2Um9qUlR1ZklEdkQxRUZpcGVaNFY4RmNYWEc0UyIsInNlc3Npb25LZXkiOiI2YzUxZG5IVitCckxhMDNFak1WTnF3PT0iLCJvcGVuSWQiOiJvTVhpVTZ4Z3pMb1JITkR4d1JSM1pSc0RKWUk4IiwidXNlcklkIjoyOTcwNjI2NzkwNjE5MDU0MDh9.e4FAd_fO-zHS_u-DF83hBLqsnUqJYjsLfPd4JUZzyws
+
+# {
+#     "code": "0d3X4n0001bHvU1Sjv10037G8t4X4n0V"
+# }
+
+
+
+GET http://localhost:8939/api/ferry/upstream/wharfs/gzkl HTTP/1.1
 content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOjI5NzA2MjY3OTA2MTkwNTQwOCwicm5TdHIiOiJaOXU2Um9qUlR1ZklEdkQxRUZpcGVaNFY4RmNYWEc0UyIsInNlc3Npb25LZXkiOiI2YzUxZG5IVitCckxhMDNFak1WTnF3PT0iLCJvcGVuSWQiOiJvTVhpVTZ4Z3pMb1JITkR4d1JSM1pSc0RKWUk4IiwidXNlcklkIjoyOTcwNjI2NzkwNjE5MDU0MDh9.e4FAd_fO-zHS_u-DF83hBLqsnUqJYjsLfPd4JUZzyws
 
-{
-    "username":"Hendry",
-    "password":"61888",
-    "clientId":"26",
-    "code":"xxx",
-    "grantType":"wechat"
-}
-
+# {
+#     "code": "0d3X4n0001bHvU1Sjv10037G8t4X4n0V"
+# }

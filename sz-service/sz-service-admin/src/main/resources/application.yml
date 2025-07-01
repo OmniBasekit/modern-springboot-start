@@ -45,7 +45,7 @@ sz:
       # 前端项目地址
       web:
       # 后端项目地址，默认自动检测springboot项目路径，无需配置。
-      api: E://code//Gitlab//sz-framework//sz-admin
+      api: /Users/rain/project/private/java-workspace/modern-springboot-start
     # 模块名，指定代码生成的模块
     module-name: sz-service
     service-name: sz-service-ferry
@@ -56,6 +56,7 @@ sz:
         enabled: true
         prefixes:
           - t_
+          - ferry_
   # 微信生态
   wechat:
     # 小程序

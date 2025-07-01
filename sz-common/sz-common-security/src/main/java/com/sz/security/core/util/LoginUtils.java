@@ -41,6 +41,7 @@ public class LoginUtils {
         // 登录，生成token
         StpUtil.login(userId, model);
         StpUtil.getTokenSession().set(USER_KEY, loginUser);
+
         // 使用全局配置而不使用model独立配置时间的问题
         StpUtil.getTokenSession().updateTimeout(model.getTimeout());
         StpUtil.getSession().updateTimeout(model.getTimeout());
